@@ -21,6 +21,14 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "L
 
 	Try / Catch, como vimos no curso anterior, é o método adequado para tratar as exceções.
 	Selecionar o bloco de código e executar: CODE > SURROUND WITH > TRY CATCH.
+
+    A IDEIA É:
+    TRY = TENTE EXECUTAR
+    CATCH (PEGAR) = TENTE RESOLVER A EXCEÇÃO QUE SURGIU (1º TENTATIVA PARA RESOLVER)
+    FINALLY = SE NÃO CONSEGUIU RESOLVER NO CATH, EXECUTE ESTE BLOCO (2º TENTATIVA PARA RESOLVER)
+
+    OBS.: NESTE CÓDIGO, NÃO HÁ A SOLUÇÃO PARA A EXCEÇÃO, MAS APENAS ESTÁ SENDO MOSTRADO
+    COMO TRATAR A EXCEÇÃO COM TRY / CATCH / FINALLY
 */
 
 package com.company;
@@ -51,6 +59,8 @@ public class Main {
             // Remaining lines represent data previously recorded by the method fillInStackTrace().
             // The format of this information depends on the implementation.
             // O erro existe, só não está sendo mostrado para o usuário.
+        } finally {
+            System.out.println("Inserção de finally!");
         }
     }
 }
